@@ -480,7 +480,7 @@ div.rmain{
 	border-radius: 50%;
 	border: 0.5px solid #D1CFCF;
 	box-shadow: -52px 63px 196px -11px rgba(0,0,0,0.51);
-
+	transition: 0.8s;
 }
 
 
@@ -968,6 +968,7 @@ footer ion-icon{
 	flex-direction: column;
 	align-items: center;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .list-projects .project img{
@@ -1001,6 +1002,7 @@ footer ion-icon{
 	border-radius: 20px;
 	padding: 3px 15px;
 	font-size: 14px;
+	color: black;
 }
 
 .python-tag{
@@ -1119,9 +1121,19 @@ footer ion-icon{
 
 #project-template .text{
 	margin: 10px 40px;
-	font-size: 15px;
+	font-size: 16px;
+	max-width: 800px;
+	margin: auto;
+	line-height: 25px;
+}
+
+#project-template .text img{
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #242D49;
+	height: auto;
 }
 
 #project-template .text p{
-	font-size: 15px;
+	font-size: 16px;
 }

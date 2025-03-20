@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Cyprien Tavel</title>
+</head>
+<body>
+
+	<div id="nav">
+		<div class="light">
+			
+			<p>Cyprien</p>
+
+		</div>
+
+		<div class="main">
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Acceuil</a>
+					</li>
+					<li class="btn">
+						<a href='me.html'>Présentation</a>
+					</li>
+					<li class="btn">
+						<a href="competence.html">Mes compétences</a>
+					</li>
+					<li class="btn">
+						<a href="projects.html">Mes projets</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact">
+			<p>Contact</p>
+		</div>
+
+
+	</div>
+
+	<div id="project-template">
+        <div class="project-top">
+            <img src="img/chess1.png">
+            <div>
+                <p class="project-title">Chess</p>
+                <div class="project-info">
+                    <p>Date: 11-2024</p>
+                </div>
+                <div class="tags-lang">
+                    <div class="tag typescript-tag">Typescript</div>
+                    <div class="tag vuejs-tag">Vuejs</div>
+                    <div class="tag vuejs-tag">NodeJs</div>
+                </div>
+                <div class="action">
+                    <a href="https://github.com/cyprientvl/chess" target="_blank">Voir sur Github</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-selection">
+            <p>Context</p>
+            <p>Mon travail</p>
+            <p>Récap</p>
+        </div>
+
+        <div class="text header-selection-context">
+            <p>Le projet Chess a été réalisé dans le cadre de ma troisième année à l'IUT Informatique. L'objectif était de développer un jeu d'échecs en utilisant le framework Vue.js pour la partie visuelle de l'application, et Node.js avec Express pour la partie API. Dans ce projet, nous avons travaillé par binôme, chaque personne étant responsable d'une partie de l'application. La partie visuelle et le fonctionnement du jeu sont inspirés de la plateforme en ligne <a href="https://www.chess.com/fr/play/online" target="_blank">Chess.com</a>.</p>
+            <img src="img/chess1.png">
+            <p>Principalement, et contrairement à Chess.com, nous avons conçu un jeu d'échecs à jouer en local, c'est-à-dire que deux utilisateurs jouent sur le même ordinateur. Le site comprend plusieurs pages : une page de connexion, une page pour consulter l'historique des parties, une page affichant le classement (leaderboard) et, bien sûr, une page pour jouer au jeu.</p>
+            <img src="img/chess2.png">
+        </div>
+
+        <div class="text header-mon-travail">
+           <p>
+            Pour ma part, lors de ce projet, j'ai développé la partie API de l'application, en gérant les utilisateurs, les scores, mais surtout la logique du jeu, notamment la vérification des mouvements possibles, la gestion des fins de partie, etc. Étant déjà familiarisé avec Node.js et Express, la création de l'API n'a pas été complexe. La véritable difficulté résidait dans la conception de l'algorithme du jeu.
+           </p>
+           <p>En effet, pour la réalisation de l'algorithme du jeu, il fallait anticiper tous les cas possibles de déplacement des pièces, ainsi que la gestion de la mise en échec du Roi.</p>
+           <img src="img/chess5.jpg" style="width: 300px;">
+           <p>
+            Pour cela, l'algorithme doit effectuer différentes actions. Dans un premier temps, il vérifie si un pion est en promotion (selon les règles des échecs), puis il procède au déplacement de la pièce. Si le déplacement est valide, l'algorithme vérifie ensuite si le Roi adverse est en échec ou s'il doit se déplacer. Enfin, toutes les actions effectuées lors du mouvement, ainsi que l'état du jeu, sont renvoyées au front-end afin d'assurer une synchronisation parfaite entre le back-end et le front-end.
+           </p>
+           <p style="margin-top: 0px; font-size: 13px;">(Algorithme principal)</p>
+            <img src="img/chess6.png">
+        </div>
+
+        <div class="text header-recap">
+            <p>
+                Pour conclure, le projet Chess m'a permis d'enrichir mes compétences en algorithmique ainsi que d'améliorer la sécurité d'un jeu en bloquant les actions potentiellement interdites. De plus, j'ai pu acquérir des compétences avec Vue.js, notamment dans la gestion de la relation entre le backend et le frontend.
+            </p>
+        </div>
+    </div>
+
+
+	<footer>
+		
+		<p>cyprien.tavel@etu.univ-lyon1.fr</p>
+		<div>
+			
+			<a target="_blank" href="https://github.com/cyprientvl">
+				<ion-icon name="logo-github"></ion-icon>
+			</a>
+			<a target="_blank" href="https://fr.linkedin.com/in/cyprien-tavel-68a61b2a2">
+				<ion-icon name="logo-linkedin"></ion-icon>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>

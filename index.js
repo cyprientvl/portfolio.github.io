@@ -1,6 +1,6 @@
-/*AOS.init({
+AOS.init({
   duration: 1200,
-})*/
+})
 
 
 const rmain = document.querySelector(".rmain");
@@ -56,3 +56,39 @@ function selectItem(index){
 
   rmain.style.transform = `rotate(${rotation}deg)`;
 }
+
+
+let headerSelection = document.querySelectorAll(".header-selection p");
+let headerSelectionContext = document.querySelector(".header-selection-context");
+let headerSelectionMonTravail = document.querySelector(".header-mon-travail");
+let headerSelectionRecap = document.querySelector(".header-recap");
+
+function headerInit(){
+  if(headerSelectionContext){
+    headerSelectionContext.style.display = "none";
+    headerSelectionMonTravail.style.display = "none";
+    headerSelectionRecap.style.display = "block";
+  }
+  
+}
+
+headerInit();
+
+headerSelection.forEach((e, index)=>{
+  e.addEventListener('click', () =>{
+    if(index == 0){
+      headerSelectionContext.style.display = "block";
+      headerSelectionMonTravail.style.display = "none";
+      headerSelectionRecap.style.display = "none";
+    }else if(index == 1){
+      headerSelectionMonTravail.style.display = "block";
+      headerSelectionContext.style.display = "none";
+      headerSelectionRecap.style.display = "none";
+    }else{
+      headerSelectionContext.style.display = "none";
+      headerSelectionRecap.style.display = "block"
+      headerSelectionMonTravail.style.display = "none";
+    }
+
+  })
+})
