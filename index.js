@@ -66,8 +66,8 @@ let headerSelectionRecap = document.querySelector(".header-recap");
 function headerInit(){
   if(headerSelectionContext){
     headerSelectionContext.style.display = "none";
-    headerSelectionMonTravail.style.display = "none";
-    headerSelectionRecap.style.display = "block";
+    headerSelectionMonTravail.style.display = "block";
+    headerSelectionRecap.style.display = "none";
   }
   
 }

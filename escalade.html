@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Cyprien Tavel</title>
+</head>
+<body>
+
+	<div id="nav">
+		<div class="light">
+			
+			<p>Cyprien</p>
+
+		</div>
+
+		<div class="main">
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Acceuil</a>
+					</li>
+					<li class="btn">
+						<a href='me.html'>Présentation</a>
+					</li>
+					<li class="btn">
+						<a href="competence.html">Mes compétences</a>
+					</li>
+					<li class="btn">
+						<a href="projects.html">Mes projets</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact">
+			<p>Contact</p>
+		</div>
+
+
+	</div>
+
+	<div id="project-template">
+        <div class="project-top">
+            <img src="img/escalade.png">
+            <div>
+                <p class="project-title">Escalade</p>
+                <div class="project-info">
+                    <p>Date: 09-2024</p>
+                </div>
+                <div class="tags-lang">
+                    <div class="tag python-tag">Python</div>
+                </div>
+                <div class="action">
+                    <a href="https://github.com/cyprientvl/chess" target="_blank">Voir sur Github</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-selection">
+            <p>Context</p>
+            <p>Mon travail</p>
+            <p>Récap</p>
+        </div>
+
+        <div class="text header-selection-context">
+            <p>Le projet Escalade en AR/VR consiste à une application en réalité augmentée ou le but est de pouvoir
+                pratiquer des mini-jeux qui projeté sur un mur d’escalade afin de combiner l’aspect sportif de
+                l’escalade et le côté ludique des mini-jeux</p>
+            <img src="img/escalade.png">
+            <p>Il utilise une caméra pour détecter le joueur sur le mur et un vidéo projecteur pour diffuser le jeu sur
+                le mur. Le but principal de l’application et de pouvoir la présenter pour la fête de la science de 2025 avec des fonctionnalités comme</p>
+            <p>
+                La connexion/inscription pour les utilisateurs<br>
+                • Le calibrage grâce au « charucoboard »<br>
+                • Les différentes interfaces visuelles<br>
+                • Score/Leaderboard: Permet de voir le score des meilleurs joueurs<br>
+                • 2 modes de jeu :<br>
+                o - Twister: Ce mode est inspiré du jeu de société du même homonyme. Le but est
+                d’attraper les prises de la même couleur, qui sont choisi aléatoirement sans tomber
+                et dans un temps imparti
+                ESCALADE<br>
+                o - Réflexe: Dans ce jeu, les prises vont changer de place sur le mur, le but sera d’êtare
+                assez rapide pour attraper ces prises pour gagner des points
+            </p>
+            <img src="img/escalade4.png">
+        </div>
+
+        <div class="text header-mon-travail">
+           <p>
+            Dans le cadre du projet d'escalade, mon travail a consisté à concevoir les différentes pages et onglets, ainsi qu'à gérer la base de données. Par exemple, j'ai développé la page permettant de consulter l'historique des scores, en intégrant les requêtes SQL associées. Pour ce faire, nous avons utilisé la bibliothèque Tkinter, qui permet de créer des applications avec des interfaces graphiques compatibles avec Windows et Linux. En ce qui concerne la gestion des interfaces graphiques, nous avons implémenté le design pattern MVC (Model-View-Controller), permettant, par exemple, qu'une modification de valeur via un formulaire (comme la connexion de l'utilisateur) actualise automatiquement l'interface.
+           </p>
+           <img src="img/model-view-controller-light-blue.png" style="width: 400px;">
+           <p>Voici l'interface Python du projet Escalade VR. À gauche, un menu permet de naviguer entre les différentes pages, tandis qu'à droite se trouve la page principale. On y retrouve un onglet pour consulter l'historique des scores, un autre pour lancer un mode de jeu, ainsi qu'une page dédiée au calibrage.</p>
+           <img src="img/escalade3.png">
+           <p>
+            Comme mentionné précédemment, j'ai également géré la base de données en récupérant les informations grâce à des requêtes SQL au démarrage de l'application. Pour simplifier le projet et le rendre plus 'portable' lors de la fête de la science, tout en assurant son fonctionnement même hors connexion, j'ai choisi d'utiliser une base de données SQLite, directement intégrée au projet. J'ai également utilisé la bibliothèque SQLAlchemy, un ORM, pour faciliter la gestion de la base de données et permettre la réalisation de migrations.
+           </p>
+           
+        </div>
+
+        <div class="text header-recap">
+            <p>
+                Pour conclure, ce projet, réalisé durant mon année d'alternance à l'université, m'a permis de réapprendre le langage Python que je n'avais pas utilisé depuis le début de ma première année. J'ai également appris à utiliser la bibliothèque Tkinter pour les interfaces graphiques, ce qui était une première pour moi. La gestion de projet a été essentielle, car nous étions un groupe de quatre personnes, et il était crucial de s'entendre et de communiquer pour comprendre les besoins de chacun et avancer efficacement.
+                        </p>
+        </div>
+    </div>
+
+
+	<footer>
+		
+		<p>cyprien.tavel@etu.univ-lyon1.fr</p>
+		<div>
+			
+			<a target="_blank" href="https://github.com/cyprientvl">
+				<ion-icon name="logo-github"></ion-icon>
+			</a>
+			<a target="_blank" href="https://fr.linkedin.com/in/cyprien-tavel-68a61b2a2">
+				<ion-icon name="logo-linkedin"></ion-icon>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>
