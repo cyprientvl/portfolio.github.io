@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Cyprien Tavel</title>
+</head>
+<body>
+
+	<div id="nav">
+		<div class="light">
+			
+			<p>Cyprien</p>
+
+		</div>
+
+		<div class="main">
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Acceuil</a>
+					</li>
+					<li class="btn">
+						<a href='me.html'>Présentation</a>
+					</li>
+					<li class="btn">
+						<a href="competence.html">Mes compétences</a>
+					</li>
+					<li class="btn">
+						<a href="projects.html">Mes projets</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact">
+			<p>Contact</p>
+		</div>
+
+
+	</div>
+
+	<div id="project-template">
+        <div class="project-top">
+            <img src="img/scale.webp">
+            <div>
+                <p class="project-title">Scale</p>
+                <div class="project-info">
+                    <p>Date: 07-2023</p>
+                </div>
+                <div class="tags-lang">
+                    <div class="tag angular-tag">Angular</div>
+                    <div class="tag typescript-tag">Typescript</div>
+					<div class="tag vuejs-tag">NodeJs</div>
+                </div>
+                <div class="action">
+                    <a href="https://dashboard.scaleapp.fr/" target="_blank">Voir le site</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-selection">
+            <p>Context</p>
+            <p>Mon travail</p>
+            <p>Récap</p>
+        </div>
+
+        <div class="text header-selection-context">
+            <p>Scale est une application web qui mettre en relation des particuliers et des magasins spécialisés pour faciliter la vente de sneakers. Fonctionnant comme une marketplace, Scale permet aux particuliers de lister leurs paires de sneakers avec un prix fixe, afin que les magasins puissent les acheter directement. Propulser par OneCookLab, expert du secteur, la plateforme gère l'ensemble du processus de vente : de la transaction sécurisée à la gestion logistique. Lorsqu'un magasin valide un achat, le paiement est réalisé directement sur Scale, avec un suivi de colis intégré et accessible à tout moment.</p>
+            <img src="img/scale.webp">
+            <p>
+                Notre mission était de concevoir cette application web de A à Z : de la partie visuelle à l’API, en passant par la gestion et le stockage des données. En tant que l’une des premières plateformes de ce genre en France, l’enjeu principal était de la développer rapidement afin de prendre position sur un marché en pleine croissance. Pour y parvenir, nous avons opté pour le framework Angular, parfaitement adapté aux applications complexes, couplé à une API en Node.js et une base de données SQL. Ce projet a été mené par une équipe composée de deux développeurs et d’un designer, travaillant en étroite collaboration.
+            </p>
+        </div>
+
+        <div class="text header-mon-travail">
+           <p>
+            Étant donné que l’application devait être développée entièrement from scratch, j’ai participé à l’ensemble des aspects techniques du projet. J’ai travaillé sur les éléments classiques tels que l’API, la base de données et l’interface utilisateur, mais également sur des fonctionnalités plus spécifiques et stratégiques.
+
+                Scale étant une plateforme proposée par OneCookLab, il a été nécessaire d’implémenter une connexion entre les deux systèmes. Seuls les utilisateurs disposant d’un abonnement OneCookLab peuvent accéder à Scale, nous avons donc mis en place une authentification croisée entre les deux plateformes.
+
+                Par ailleurs, Scale propose un suivi de colis intégré. Nous avons donc connecté l’application à l’API de La Poste pour assurer le lien entre les numéros de suivi et les statuts d’expédition.
+
+                La partie la plus critique concernait la gestion des paiements. Chaque utilisateur et chaque magasin dispose d’un "wallet" sur la plateforme. La création de ce wallet nécessite de fournir des informations légales telles que l’âge et une pièce d’identité afin de prévenir les fraudes. Une fois le wallet créé, l’utilisateur peut y recevoir des paiements et effectuer des retraits. Nous avons pris soin de couvrir tous les cas d’usage liés aux transactions et à la sécurité pour garantir la fiabilité du système.
+
+                En raison de la nature confidentielle de ces informations, aucun détail sensible ni capture d’écran du fonctionnement interne ne peut être partagé.
+           </p>
+        </div>
+
+        <div class="text header-recap">
+            <p>
+                Grâce à ce projet, j’ai énormément développé mes compétences sur l’ensemble du cycle de vie d’une application web. En partant de zéro, j’ai dû intervenir sur toutes les couches de l’application, ce qui m’a permis d’acquérir une vision globale et concrète d’un projet en production.
+
+                J’ai renforcé mes compétences en développement front-end avec Angular, notamment dans la création d’interfaces complexes et dynamiques adaptées aux besoins d’une marketplace. J’ai aussi approfondi le développement back-end avec Node.js, en concevant une API robuste et sécurisée.
+                
+                Ce projet m’a permis de me confronter à des problématiques spécifiques comme la gestion des relations entre plusieurs plateformes via des systèmes d’authentification croisée (Scale et OneCookLab). J’ai également mis en place une intégration d’API externes, notamment avec le service de La Poste pour le suivi des colis, ce qui m’a appris à gérer des flux de données tiers et à assurer leur fiabilité.
+                
+                Un des aspects les plus formateurs a été la mise en place d’un système de paiement sécurisé, incluant la création et la gestion de wallets utilisateurs. J’ai appris à intégrer des process de KYC (Know Your Customer) pour sécuriser les transactions et lutter contre la fraude, tout en respectant les standards de sécurité et la protection des données sensibles.
+                
+                Enfin, cette expérience m’a permis de mieux comprendre les enjeux liés à la gestion de projet en équipe restreinte, où la polyvalence et la réactivité sont essentielles. J’ai développé ma capacité à gérer les priorités, à livrer rapidement tout en garantissant la qualité et la sécurité du produit.                        </p>
+        </div>
+    </div>
+
+
+	<footer>
+		
+		<p>cyprien.tavel@etu.univ-lyon1.fr</p>
+		<div>
+			
+			<a target="_blank" href="https://github.com/cyprientvl">
+				<ion-icon name="logo-github"></ion-icon>
+			</a>
+			<a target="_blank" href="https://fr.linkedin.com/in/cyprien-tavel-68a61b2a2">
+				<ion-icon name="logo-linkedin"></ion-icon>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>

@@ -65,8 +65,8 @@ let headerSelectionRecap = document.querySelector(".header-recap");
 
 function headerInit(){
   if(headerSelectionContext){
-    headerSelectionContext.style.display = "none";
-    headerSelectionMonTravail.style.display = "block";
+    headerSelectionContext.style.display = "block";
+    headerSelectionMonTravail.style.display = "none";
     headerSelectionRecap.style.display = "none";
   }
   
