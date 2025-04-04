@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Cyprien Tavel</title>
+</head>
+<body>
+
+	<div id="nav">
+		<div class="light">
+			
+			<p>Cyprien</p>
+
+		</div>
+
+		<div class="main">
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Acceuil</a>
+					</li>
+					<li class="btn">
+						<a href='me.html'>Présentation</a>
+					</li>
+					<li class="btn">
+						<a href="competence.html">Mes compétences</a>
+					</li>
+					<li class="btn">
+						<a href="projects.html">Mes projets</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact">
+			<p>Contact</p>
+		</div>
+
+
+	</div>
+
+	<div id="project-template">
+        <div class="project-top">
+            <img src="img/esp32.jpg">
+            <div>
+                <p class="project-title">IOT</p>
+                <div class="project-info">
+                    <p>Date: 03-2025</p>
+                </div>
+                <div class="tags-lang">
+                    <div class="tag typescript-tag">C++</div>
+                    <div class="tag java-tag">ESP32</div>
+                </div>
+                <div class="action">
+                    <a href="https://dashboard.scaleapp.fr/" target="_blank">Voir sur Github</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-selection">
+            <p>Context</p>
+            <p>Mon travail</p>
+            <p>Récap</p>
+        </div>
+
+        <div class="text header-selection-context">
+            <p>Le projet IoT réalisé à l'IUT consistait à développer un système embarqué connecté à Internet, choisi par l’étudiant, intégrant une API, une base de données, une interface web et, bien sûr, un ESP32 équipé de différents capteurs. Ce projet était mené en groupes de trois.
+
+                Dans notre cas, nous avons opté pour la création d’un système de sécurité domestique. Celui-ci repose sur l'utilisation de capteurs de mouvement, d'une caméra et d'un digicode permettant d'activer ou de désactiver l'alarme. En cas de détection de mouvement, le système déclenche une alerte lumineuse et sonore.</p>
+            <img src="img/esp32.jpg" style="width: 300px;">
+            <p>
+                L'interface web disponible permet à l'utilisateur de créer un compte et d'y associer son système d'alarme. Grâce à cette interface, il peut modifier le code PIN du digicode pour activer ou désactiver l'alarme, consulter l'historique des mouvements détectés et, surtout, visionner en direct le flux des caméras. De plus, une capture photo est automatiquement prise en cas de détection de mouvement.
+            </p>
+        </div>
+
+        <div class="text header-mon-travail">
+           <p>
+            Étant principalement spécialisé dans le domaine du web, j’ai décidé d’explorer quelque chose de nouveau et différent pour ce projet. Ainsi, je me suis chargé de la configuration de l’ESP32 et du développement du programme, tandis qu’un de mes collègues s’occupait de l’API et de la base de données, et le dernier de l’interface web.
+
+            Mon rôle consistait à implémenter le code pour chaque capteur et chaque objet connecté à l’ESP32. Pour configurer correctement l’ESP32, une suite logique devait être respectée. Dans un premier temps, les capteurs sont initialisés, puis l’ESP32 tente de se connecter à un réseau Wi-Fi afin de communiquer avec l’API et récupérer les identifiants de l’utilisateur, notamment le code PIN permettant d’activer ou de désactiver l’alarme.
+
+            Si aucune connexion Wi-Fi n’est disponible, un mot de passe par défaut est utilisé. De plus, le système intègre un mini-serveur web permettant sa configuration. Lors du premier démarrage, l’utilisateur doit entrer ses identifiants de connexion afin d’initialiser l’appareil et d’obtenir un token, nécessaire pour communiquer avec l’API et lier le système à son compte utilisateur.
+           </p>
+          
+        </div>
+
+        <div class="text header-recap">
+            <p>
+                Grâce à ce projet, j’ai pu acquérir de nouvelles compétences et approfondir mes connaissances dans plusieurs domaines. Tout d’abord, j’ai développé mes compétences en programmation embarquée en configurant et programmant l’ESP32, ainsi qu’en intégrant et gérant différents capteurs et objets connectés.
+
+J’ai également renforcé mes connaissances en connexion et communication réseau, en mettant en place la connexion Wi-Fi de l’ESP32 et en assurant la communication avec une API distante. Par ailleurs, j’ai appris à gérer la sécurité et l’authentification en mettant en place un système d’identifiants utilisateur et un token pour sécuriser les échanges entre l’ESP32 et l’API.
+
+Une autre compétence que j’ai développée est la création d’un mini-serveur web embarqué, permettant de configurer l’appareil lors de son premier démarrage. J’ai aussi travaillé sur l’architecture logicielle, en structurant mon programme de manière logique, notamment en assurant l’initialisation des capteurs et la récupération des données utilisateur.
+
+Ce projet m’a également permis de renforcer ma capacité à travailler en équipe, en collaborant avec mes collègues qui étaient chargés du développement de l’API, de la base de données et de l’interface web. Enfin, j’ai acquis des compétences spécifiques liées à la gestion d’un système de sécurité, en intégrant des capteurs de mouvement, une caméra et un digicode pour la gestion de l’alarme.
+
+En explorant un domaine différent de mon expertise habituelle dans le web, ce projet m’a offert une opportunité précieuse d’apprentissage et m’a permis d’élargir mon champ de compétences en systèmes embarqués.
+            </p>
+        </div>
+    </div>
+
+
+	<footer>
+		
+		<p>cyprien.tavel@etu.univ-lyon1.fr</p>
+		<div>
+			
+			<a target="_blank" href="https://github.com/cyprientvl">
+				<ion-icon name="logo-github"></ion-icon>
+			</a>
+			<a target="_blank" href="https://fr.linkedin.com/in/cyprien-tavel-68a61b2a2">
+				<ion-icon name="logo-linkedin"></ion-icon>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>
